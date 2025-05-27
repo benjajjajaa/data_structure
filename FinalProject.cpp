@@ -122,18 +122,24 @@ void clearInputBuffer() {
 
 void display()
 {
-    printf("\x1B[2J");   
-    printf("\n");
-    printf("  \t\t\t\t\t      \t /$$   /$$   /$$$$$$$$                                  \t    \n");
-    printf("  \t\t\t\t\t      \t| $$  | $$  | $$_____/                                         \t    \n");
-    printf("  \t\t\t\t\t      \t| $$  | $$  | $$       \t    \n");
-    printf("  \t\t\t\t\t      \t| $$  | $$  | $$$$$       \t    \n");
-    printf("  \t\t\t\t\t      \t| $$  | $$  | $$__/          \t    \n");
-    printf("  \t\t\t\t\t      \t| $$  | $$  | $$          \t    \n");
-    printf("  \t\t\t\t\t      \t|  $$$$$$/  | $$$$$$$$        \t    \n");
-    printf("  \t\t\t\t\t      \t \______/   |________/   \t    \n\n");
-    printf("\n\n");
-}
+    std::string courseCode = "CS101";  // You can change this to your desired course code
+
+    std::cout << "\x1B[2J";   
+    std::cout << "\n";
+
+    std::cout << "  \t\t\t\t\t      \t /$$   /$$   /$$$$$$$$                                  \t    \n";
+    std::cout << "  \t\t\t\t\t      \t| $$  | $$  | $$_____/                                         \t    \n";
+    std::cout << "  \t\t\t\t\t      \t| $$  | $$  | $$       \t    \n";
+    std::cout << "  \t\t\t\t\t      \t| $$  | $$  | $$$$$       \t    \n";
+    std::cout << "  \t\t\t\t\t      \t| $$  | $$  | $$__/          \t    \n";
+    std::cout << "  \t\t\t\t\t      \t| $$  | $$  | $$          \t    \n";
+    std::cout << "  \t\t\t\t\t      \t|  $$$$$$/  | $$$$$$$$        \t    \n";
+    std::cout << "  \t\t\t\t\t      \t \\______/   |________/   \t    \n\n";
+
+    // Centered Course Code
+    std::cout << "\t\t\t\t\t\t   " << DATA STRUCTURE AND ALGORITHMN << "\n\n";
+
+    
 
 int main() {
     display();

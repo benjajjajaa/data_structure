@@ -125,24 +125,24 @@ void clearScreen() {
 
 void display() {
     clearScreen();
-        cout << "\n\n";
+    cout << "\n\n";
     cout << "\t\t\t\t╔════════════════════════════════════════════════════════════════════╗\n";
     cout << "\t\t\t\t║                                                                    ║\n";
-    cout << "\t\t\t\t║                      \t /$$   /$$   /$$$$$$$$                       ║\n";
-    cout << "\t\t\t\t║                      \t| $$  | $$  | $$_____/                       ║\n";
-    cout << "\t\t\t\t║                      \t| $$  | $$  | $$                             ║\n";
-    cout << "\t\t\t\t║                      \t| $$  | $$  | $$$$$                          ║\n";
-    cout << "\t\t\t\t║                      \t| $$  | $$  | $$__/                          ║\n";                                                                                                                                                                                                                
-    cout << "\t\t\t\t║                      \t| $$  | $$  | $$                             ║\n";
-    cout << "\t\t\t\t║                      \t|  $$$$$$/  | $$$$$$$$                       ║\n";                               
-    cout << "\t\t\t\t║                     \t \\______/   |________/                       ║\n";  
+    cout << "\t\t\t\t║                      \t /$$   /$$   /$$$$$$$$                      ║\n";
+    cout << "\t\t\t\t║                      \t| $$  | $$  | $$_____/                      ║\n";
+    cout << "\t\t\t\t║                      \t| $$  | $$  | $$                            ║\n";
+    cout << "\t\t\t\t║                      \t| $$  | $$  | $$$$$                         ║\n";
+    cout << "\t\t\t\t║                      \t| $$  | $$  | $$__/                         ║\n";                                                                                                                                                                                                                
+    cout << "\t\t\t\t║                      \t| $$  | $$  | $$                            ║\n";
+    cout << "\t\t\t\t║                      \t|  $$$$$$/  | $$$$$$$$                      ║\n";                               
+    cout << "\t\t\t\t║                     \t \\______/   |________/                      ║\n";  
     cout << "\t\t\t\t║                                                                    ║\n";                      
     cout << "\t\t\t\t╚════════════════════════════════════════════════════════════════════╝\n";
     cout << "\n";
-    cout << "\t\t\t\t            ╭────────────────────────────────────────────╮\n";
-    cout << "\t\t\t\t            │       Data Structures and Algorithms       │\n";
-    cout << "\t\t\t\t            │           Course Code: NCP_1203            │\n";
-    cout << "\t\t\t\t            ╰────────────────────────────────────────────╯\n\n";
+    cout << "\t\t\t\t        ╭────────────────────────────────────────────╮\n";
+    cout << "\t\t\t\t        │       Data Structures and Algorithms       │\n";
+    cout << "\t\t\t\t        │           Course Code: NCP_1203            │\n";
+    cout << "\t\t\t\t        ╰────────────────────────────────────────────╯\n\n";
 }
 
 int main() {
@@ -211,29 +211,15 @@ int main() {
 
     while (true) {
         clearScreen();  // Instead of display()
-        cout << "\n\n";
-        cout << "\t\t\t\t  ___    ___  ___  ____    ____ ___  ___ __   ___    ___  ___  ___  __  __  ___    ___   ____ ___  ___  ____ __  __ ______     __  _  _  __  ______  ____ ___  ___\n";
-        cout << "\t\t\t\t // \\  //   // \\ || \\  ||    ||\\//|| ||  //      ||\\//|| // \\ ||\ || // \\  // \\ ||    ||\\//|| ||    ||\ || | || |    (( \ \\// (( \ | || | ||    ||\\//||\n";
-        cout << "\t\t\t\t ||=|| ((    ||=|| ||  )) ||==  || \/ || || ((       || \/ || ||=|| ||\\|| ||=|| (( ___ ||==  || \/ || ||==  ||\\||   ||       \\   )/   \\    ||   ||==  || \/ ||\n\n\n\n";
-        cout << "\t\t\t\t ------------------------------------------\n";
-        cout << "\t\t\t\t|  [1] Search student by student number   |\n";
-        cout << "\t\t\t\t ------------------------------------------\n";
-        cout << "\t\t\t\t ------------------------------------------\n";
-        cout << "\t\t\t\t|  [2] Add new student data               |\n";
-        cout << "\t\t\t\t ------------------------------------------\n";
-        cout << "\t\t\t\t ------------------------------------------\n";
-        cout << "\t\t\t\t|  [3] Find student with highest grade    |\n";
-        cout << "\t\t\t\t ------------------------------------------\n";
-        cout << "\t\t\t\t ------------------------------------------\n";
-        cout << "\t\t\t\t|  [4] Find student with lowest grade     |\n";
-        cout << "\t\t\t\t ------------------------------------------\n";
-        cout << "\t\t\t\t ------------------------------------------\n";
-        cout << "\t\t\t\t|  [5] List students who failed           |\n";
-        cout << "\t\t\t\t ------------------------------------------\n";
-        cout << "\t\t\t\t ------------------------------------------\n";
-        cout << "\t\t\t\t|  [6] Exit                               |\n";
-        cout << "\t\t\t\t ------------------------------------------\n\n\n";
-        cout << "\t\t\t\tEnter choice: ";
+
+        cout << "Academic Management System\n";
+        cout << "1. Search student by student number\n";
+        cout << "2. Add new student data\n";
+        cout << "3. Find student with highest grade\n";
+        cout << "4. Find student with lowest grade\n";
+        cout << "5. List students who failed\n";
+        cout << "6. Exit\n";
+        cout << "Enter choice: ";
 
         int choice;
         cin >> choice;
