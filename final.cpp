@@ -25,7 +25,7 @@ struct StudentNode {
 // Class for the Binary Search Tree managing students
 class AcademicBST {
 private:
-    StudentNode* root;
+    StudentNode* root; //where the tree starts
 
     StudentNode* insert(StudentNode* node, long studentNumber, const string& fullName, const string& ueEmail, const string& section, float grade) {
         if (node == nullptr)
